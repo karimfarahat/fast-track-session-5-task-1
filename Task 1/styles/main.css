@@ -1,0 +1,287 @@
+body {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.circle {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+}
+
+.relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.footer-circle {
+  position: absolute;
+  right: -350px;
+  top: -800px;
+  background: #1c3d5b;
+  z-index: 0;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-main a {
+  text-decoration: none;
+}
+
+.pill {
+  background-color: #fff;
+  border: 0;
+  color: #000;
+  border-radius: 56px;
+  padding: 8px 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0a2640;
+  font-family: Open Sans;
+  padding: 0px 20px;
+}
+header.blog {
+  background-color: #fff;
+}
+header.blog .nav-item a {
+  color: #0a2640;
+}
+header.blog .nav-item button {
+  border: 2px solid #0a2640;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding: 20px 100px;
+  }
+}
+header .header-logo {
+  width: 100px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  header .header-logo {
+    width: 100%;
+  }
+}
+header .nav-item {
+  margin: 0 20px;
+}
+header .nav-item a {
+  color: #fff;
+  font-weight: 600;
+}
+header .nav-item a:hover {
+  color: #65e4a3;
+}
+header .nav-item button {
+  font-weight: 700;
+  width: 128px;
+  padding: 8px, 40px, 8px, 40px;
+}
+
+.faded-text-grey {
+  color: #777777;
+}
+
+.faded-text-light-grey {
+  color: #f1f1f1;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-24 {
+  font-size: 24px;
+}
+
+.f-28 {
+  font-size: 28px;
+}
+
+.f-96 {
+  font-size: 96px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+section.navy {
+  color: #fff;
+}
+section.white {
+  color: #000;
+}
+section .green {
+  color: #65e4a3;
+}
+section .green-bg {
+  background-color: #65e4a3;
+}
+section .headline {
+  font-family: Manrope;
+  font-size: 48px;
+}
+section .manrope {
+  font-family: Manrope;
+}
+section .about-title {
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 12px;
+}
+section .blog-title {
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 12px;
+  color: #0a2640;
+}
+section .big-caption {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 64px;
+}
+section .blog-caption {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 64px;
+  color: #0a2640;
+}
+section .category {
+  color: #0a2640;
+  font-weight: bold;
+}
+section .draw-end-border {
+  border-bottom: 5px solid #0a2640;
+}
+section .px-md-200 {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  section .px-md-200 {
+    padding: 0 200px;
+  }
+}
+section .px-md-150 {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  section .px-md-150 {
+    padding: 0 150px;
+  }
+}
+section .px-md-100 {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  section .px-md-100 {
+    padding: 0 100px;
+  }
+}
+section .upper-pad-12 {
+  padding-top: 12px;
+}
+section .upper-pad-50 {
+  padding-top: 50px;
+}
+section .upper-pad-100 {
+  padding-top: 100px;
+}
+section .upper-pad-150 {
+  padding-top: 150px;
+}
+section .upper-pad-200 {
+  padding-top: 200px;
+}
+section .lower-pad-12 {
+  padding-bottom: 12px;
+}
+section .lower-pad-72 {
+  padding-bottom: 72px;
+}
+section .lower-pad-md-88 {
+  padding-bottom: 188px;
+}
+@media screen and (min-width: 768px) {
+  section .lower-pad-md-88 {
+    padding-bottom: 88px;
+  }
+}
+
+.upshift-margin {
+  margin-top: -170px;
+}
+
+.mx-100 {
+  margin: 0 8%;
+}
+
+.image-placeholder {
+  height: 100%;
+}
+.image-placeholder .flex-col-wrapper {
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.flex-col-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.flex-row-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.value-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navy {
+  background-color: #0a2640;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.values-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,307 @@
+$base-color: #0a2640;
+$secondary-color: #65e4a3;
+
+body {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+// .container-fluid {
+//   padding: 0 150px;
+// }
+
+// .p-md-5 {
+//   padding: 0 150px;
+// }
+
+.circle {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+}
+
+.relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.z-2 {
+  z-index: 2;
+}
+.z-1 {
+  z-index: 1;
+}
+
+.z-5 {
+  z-index: 5;
+}
+.footer-circle {
+  position: absolute;
+  right: -350px;
+  top: -800px;
+
+  background: #1c3d5b;
+
+  z-index: 0;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.pill {
+  background-color: #fff;
+  border: 0;
+  color: #000;
+  border-radius: 56px;
+  padding: 8px 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $base-color;
+  &.blog {
+    background-color: #fff;
+
+    .nav-item {
+      a {
+        color: $base-color;
+      }
+
+      button {
+        border: 2px solid $base-color;
+      }
+    }
+  }
+  font-family: Open Sans;
+  padding: 0px 20px;
+  @media screen and (min-width: 768px) {
+    padding: 20px 100px;
+  }
+
+  .header-logo {
+    width: 100px;
+    height: auto;
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+  }
+  .nav-item {
+    margin: 0 20px;
+    a {
+      color: #fff;
+      font-weight: 600;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+    button {
+      font-weight: 700;
+      width: 128px;
+      padding: 8px, 40px, 8px, 40px;
+    }
+  }
+}
+
+.faded-text-grey {
+  color: #777777;
+}
+.faded-text-light-grey {
+  color: #f1f1f1;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+.f-24 {
+  font-size: 24px;
+}
+.f-28 {
+  font-size: 28px;
+}
+.f-96 {
+  font-size: 96px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+section {
+  &.navy {
+    color: #fff;
+  }
+  &.white {
+    color: #000;
+  }
+
+  .green {
+    color: $secondary-color;
+  }
+
+  .green-bg {
+    background-color: $secondary-color;
+  }
+
+  .headline {
+    font-family: Manrope;
+
+    font-size: 48px;
+  }
+
+  .manrope {
+    font-family: Manrope;
+  }
+  .about-title {
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 12px;
+  }
+  .blog-title {
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    color: $base-color;
+  }
+  .big-caption {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 64px;
+  }
+  .blog-caption {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 64px;
+    color: $base-color;
+  }
+
+  .category {
+    color: $base-color;
+    font-weight: bold;
+  }
+
+  .draw-end-border {
+    border-bottom: 5px solid $base-color;
+  }
+  .px-md-200 {
+    padding: 0 20px;
+    @media screen and (min-width: 768px) {
+      padding: 0 200px;
+    }
+  }
+
+  .px-md-150 {
+    padding: 0 20px;
+    @media screen and (min-width: 768px) {
+      padding: 0 150px;
+    }
+  }
+  .px-md-100 {
+    padding: 0 20px;
+    @media screen and (min-width: 768px) {
+      padding: 0 100px;
+    }
+  }
+
+  .upper-pad-12 {
+    padding-top: 12px;
+  }
+  .upper-pad-50 {
+    padding-top: 50px;
+  }
+
+  .upper-pad-100 {
+    padding-top: 100px;
+  }
+  .upper-pad-150 {
+    padding-top: 150px;
+  }
+  .upper-pad-200 {
+    padding-top: 200px;
+  }
+
+  .lower-pad-12 {
+    padding-bottom: 12px;
+  }
+
+  .lower-pad-72 {
+    padding-bottom: 72px;
+  }
+
+  .lower-pad-md-88 {
+    padding-bottom: 188px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .lower-pad-md-88 {
+      padding-bottom: 88px;
+    }
+  }
+}
+
+.upshift-margin {
+  margin-top: -170px;
+}
+
+.mx-100 {
+  margin: 0 8%;
+}
+
+.image-placeholder {
+  height: 100%;
+  .flex-col-wrapper {
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+  }
+}
+.flex-col-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+// .value-img {
+//   height: 100%;
+// }
+.flex-row-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.value-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navy {
+  background-color: $base-color;
+}
+.white {
+  background-color: #fff;
+}
+
+.values-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
